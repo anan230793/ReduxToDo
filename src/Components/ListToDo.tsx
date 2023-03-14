@@ -53,10 +53,10 @@ const ListToDo = () => {
         </div>
       ) : (
         <ul className="todos">
-          {todoList.map(({id , content}) => {
+          {todoList.map(({val:any}) => {
             return (
-              <li className="grid" key={id}>
-                <span className="content">{content}</span>
+              <li className="grid" key={val:id}>
+                <span className="content">{val:content}</span>
                 <span className="todo-action">
                   <AiOutlineCloseCircle
                     className="close"
